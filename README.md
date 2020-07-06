@@ -8,8 +8,8 @@ Deploying your application to the cloud could be quite exhausting. You have to f
 ## Installation and Usage
 
 ```bash
-git clone https://github.com/nerdeveloper/stacks.git
-cd stacks
+git clone https://github.com/LPMatrix/ShellOps.git
+cd ShellOps
 bash setup.sh
 ```
 
