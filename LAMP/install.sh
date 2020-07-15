@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 echo "***** Installing Apache, MySQL and PHP for Debian and Ubuntu OS ********"
 sleep 2
 

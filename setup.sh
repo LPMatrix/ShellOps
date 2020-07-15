@@ -29,3 +29,22 @@ do
         *) echo "invalid option $REPLY";;
     esac
 done
+
+PS4='Do you want to install ssl certificate? '
+options=("Yes", "No")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Yes" )
+            sleep 1
+            sudo add-apt-repository ppa:certbot/certbot
+            sleep 1
+            sudo apt install python-certbot-apache
+            sleep 1
+            sudo certbot --apache
+            ;;
+        "No")
+            break
+        ;;
+    esac
+done
