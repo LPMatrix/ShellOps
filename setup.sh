@@ -1,18 +1,12 @@
 #!/bin/bash
 
 
-echo "**********
- ShellOps
-**********"
+echo 
+"*****************************
+# ShellOps                    #
+# A tool to setup your server #
+******************************"
 
-checkOS () {
-    unameOut="$(uname -s)"
-    case "${unameOut}" in
-        Linux*)     machine=Linux;;
-        Darwin*)    machine=Mac;;
-        *)          machine="UNKNOWN:${unameOut}"
-    esac
-}
 PS3='Please enter your choice or enter "3" to quit: '
 options=("LAMP"  "LNMP" "Quit")
 select opt in "${options[@]}"
