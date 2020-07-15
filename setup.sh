@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-echo "*****************************
+echo "*******************************
 # ShellOps                    #
 # A tool to setup your server #
-******************************"
+*******************************"
 
 PS3='Please enter your choice or enter "3" to quit: '
 options=("LAMP"  "LNMP" "Quit")
