@@ -31,10 +31,10 @@ do
 done
 
 PS4='Do you want to install ssl certificate? '
-options=("Yes", "No")
-select opt in "${options[@]}"
+choices=("Yes", "No")
+select choice in "${choices[@]}"
 do
-    case $opt in
+    case $choice in
         "Yes" )
             sleep 1
             sudo add-apt-repository ppa:certbot/certbot
@@ -45,6 +45,8 @@ do
             ;;
         "No")
             break
+        ;;
+        *) echo "invalid option $REPLY"
         ;;
     esac
 done
